@@ -7,5 +7,11 @@ namespace DotnetBakery.Models
 {
     public class Baker 
     {
+        //properties -> colums
+        //EF knows this is a primary key and serial
+        public int id {get; set;}
+
+        [Required] // C# attribute, NOT NULL
+        public string name {get; set;}
     }
 }
